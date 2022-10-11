@@ -44,6 +44,18 @@ textarea {
   color: var(--color-blue);
 }
 
+/* Disable increment/decrement arrows  */
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
 input[type='text']:focus,
 input[type='number']:focus,
 select:focus,
@@ -140,4 +152,8 @@ button.warning {
   100% {
     clip-path: polygon(50% 50%, 0 0, 100% 0, 100% 100%, 100% 100%, 100% 100%);
   }
+}
+
+.message {
+  margin-top: 20px;
 }
